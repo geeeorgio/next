@@ -1,8 +1,11 @@
+import Hero from '@/components/sections/Hero';
+import Section from '@/components/ui/Section';
+
 const Home = () => {
   return (
-    <div>
-      <h1>Home page</h1>
-    </div>
+    <Section>
+      <Hero />
+    </Section>
   );
 };
 
