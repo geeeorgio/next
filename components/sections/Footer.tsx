@@ -6,10 +6,10 @@ const Footer = () => {
   return (
     <footer className="bg-footer border-t border-t-gold-accent-muted shadow-[0_4px_20px_rgba(201,168,76,0.3)]">
       <ul>
-        {navItemsList.map(({ href, label }) => (
-          <li key={label}>
+        {navItemsList.map(({ href, label_ua }) => (
+          <li key={label_ua}>
             <Link href={href} className="text-foreground font-display">
-              {label}
+              {label_ua}
             </Link>
           </li>
         ))}

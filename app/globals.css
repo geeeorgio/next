@@ -1,8 +1,8 @@
 @import 'tailwindcss';
 
 @theme inline {
-  --color-primary: #003b29;
-  --color-primary-dark: #001811;
+  --color-primary: #001f15;
+  --color-primary-dark: #00140f;
 
   --color-header: #06130d;
   --color-footer: #020a07;
@@ -14,6 +14,7 @@
 
   --color-green-accent: #a3c500;
   --color-gold-accent: #e0b84f;
+  --color-gold-middle-accent: #f5d98e;
   --color-gold-accent-muted: #7a6228;
 
   --font-sans: var(--font-inter);
