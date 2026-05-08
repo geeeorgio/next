@@ -1,35 +1,46 @@
 @import 'tailwindcss';
 
 @theme inline {
-  --color-primary: #001f15;
-  --color-primary-dark: #00140f;
+  --color-primary: #031c0d;
+  --color-primary-dark: #03150f;
 
-  --color-header: #06130d;
-  --color-footer: #020a07;
+  --color-header: #04110d;
+  --color-footer: #020906;
 
-  --color-foreground: #ededed;
-  --color-foreground-muted: #a0a0a0;
+  --color-foreground: #f0f7f4;
+  --color-foreground-muted: #9ca3af;
 
-  --color-nav-hover: #244c3a;
+  --color-nav-hover: #064e3b;
+  --color-green-accent: #b4d333;
 
-  --color-green-accent: #a3c500;
-  --color-gold-accent: #e0b84f;
-  --color-gold-middle-accent: #f5d98e;
-  --color-gold-accent-muted: #7a6228;
+  --color-gold-accent: #d4af37;
+  --color-gold-middle-accent: #e6c76a;
+  --color-gold-accent-muted: #8b6a21;
 
   --font-sans: var(--font-inter);
   --font-display: var(--font-playfair);
 
   --animate-cursor: cursor 1s step-end infinite;
+  --animate-shimmer: shimmer 1.5s ease-in-out infinite;
 
   @keyframes cursor {
     50% {
       opacity: 0;
     }
   }
+
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-150%) skewX(-15deg);
+    }
+    100% {
+      transform: translateX(150%) skewX(-15deg);
+    }
+  }
 }
 
 body {
-  color: #ededed;
+  color: #9ca3af;
+  background-color: #1c1c1c;
   font-family: var(--font-inter);
 }

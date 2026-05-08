@@ -1,5 +1,8 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { LiaTelegramPlane } from 'react-icons/lia';
 
 import { navItemsList } from '@/lib/nav-items';
@@ -7,8 +10,10 @@ import { navItemsList } from '@/lib/nav-items';
 import CustomButton from '../ui/CustomButton';
 
 const Header = () => {
+  const pathname = usePathname();
+
   return (
-    <header className="bg-header w-full border-b border-b-gold-accent-muted shadow-[0_4px_20px_rgba(201,168,76,0.3)]">
+    <header className="bg-header/60 w-full border-b border-b-gold-accent-muted/60 shadow-[0_-4px_20px_rgba(201,168,76,0.5)] sticky top-0 z-50 backdrop-blur-md">
       <div className="flex flex-row items-center justify-between px-1 py-1 md:px-2 md:py-1.5 lg:px-3 lg:py-2">
         <Link
           href="/"
@@ -27,18 +32,33 @@ const Header = () => {
           />
         </Link>
 
-        <ul className="flex flex-row">
-          {navItemsList.map(({ href, label_ua }) => (
-            <li key={label_ua} className="">
-              <Link
-                href={href}
-                className="block px-0.5 py-0.5 md:px-1 md:py-1 lg:px-1.5 lg:py-1.5 xl:px-2.5 xl:py-2.5 text-xs lg:text-base xl:text-lg text-foreground font-display font-semibold hover:text-gold-accent hover:[text-shadow:4px_6px_12px_rgba(201,168,76,0.5)] transition-all duration-300"
-              >
-                {label_ua}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <nav>
+          <ul className="flex flex-row gap-2">
+            {navItemsList.map(({ href, label_ua }) => {
+              const isActive = pathname === href;
+
+              return (
+                <li key={label_ua}>
+                  <Link
+                    href={href}
+                    className={`relative px-2.5 py-2 text-xs lg:text-base xl:text-lg font-display font-semibold transition-all duration-300
+                      ${
+                        isActive
+                          ? 'text-gold-accent [text-shadow:0_0_12px_rgba(224,184,79,0.4)]'
+                          : 'text-foreground hover:text-gold-accent'
+                      }`}
+                  >
+                    {label_ua}
+
+                    {isActive && (
+                      <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 bg-gold-accent rounded-full shadow-[0_0_8px_#e0b84f]" />
+                    )}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
 
         <CustomButton>
           <span className="text-foreground font-sans font-semibold text-xs lg:text-base">
