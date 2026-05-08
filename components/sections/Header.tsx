@@ -40,7 +40,7 @@ const Header = () => {
           ))}
         </ul>
 
-        <CustomButton btnType="telegram">
+        <CustomButton>
           <span className="text-foreground font-sans font-semibold text-xs lg:text-base">
             Написати в Telegram
           </span>

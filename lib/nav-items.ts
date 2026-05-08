@@ -1,3 +1,5 @@
+import { TbTargetArrow, TbChartBarPopular, TbShieldCheck, TbHeartHandshake } from 'react-icons/tb';
+
 export const navItemsList = [
   { href: '/services', label_en: 'Services', label_ua: 'Послуги' },
   { href: '/about', label_en: 'About', label_ua: 'Про мене' },
@@ -20,4 +22,23 @@ export const skills = [
   'стабільний потік продажів',
   'заявки без зливу бюджету',
   'мастшабування бізнесу',
+];
+
+export const infoList = [
+  {
+    text: `Реклама,\nяка приносить результат`,
+    icon: TbTargetArrow,
+  },
+  {
+    text: `Прозора аналітика\n\nта звітність`,
+    icon: TbChartBarPopular,
+  },
+  {
+    text: `Ефективні рішення.\nБез зливу бюджету`,
+    icon: TbShieldCheck,
+  },
+  {
+    text: `Індивідуальний підхід\nдо потреб бізнесу`,
+    icon: TbHeartHandshake,
+  },
 ];
