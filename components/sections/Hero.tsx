@@ -6,6 +6,7 @@ import { LiaTelegramPlane, LiaUserCircle } from 'react-icons/lia';
 import { stats } from '@/lib/nav-items';
 
 import CustomButton from '../ui/CustomButton';
+import Typewriter from '../ui/Typewriter';
 
 const Hero = () => {
   return (
@@ -46,12 +47,20 @@ const Hero = () => {
             </div>
           ))}
         </div>
-        <div className="w-3/4">
-          <h4 className="">Я допомогаю бізнесу отримувати</h4>
-          <p className="text-foreground font-medium text-sm lg:text-base">
-            Поєдную 15-річний інженерний досвід з алгоритмами Meta та Google Ads
-          </p>
+        <div className="w-3/4 flex flex-col gap-1 md:gap-2 lg:gap-3">
+          <div className="w-full flex flex-col">
+            <h4 className="text-foreground text-base md:text-xl lg:text-3xl xl:text-4xl font-bold text-shadow-amber-50 uppercase">
+              Я допомогаю бізнесу отримувати
+            </h4>
+            <span className="overflow-hidden whitespace-nowrap text-foreground text-base md:text-xl lg:text-3xl xl:text-4xl font-bold text-shadow-amber-50 uppercase">
+              <Typewriter />
+            </span>
+          </div>
         </div>
+
+        <p className="text-foreground font-medium text-xs lg:text-base">
+          Поєдную 15-річний інженерний досвід з алгоритмами Meta та Google Ads
+        </p>
 
         <div className="flex flex-row self-start gap-3 md:gap-4 lg:gap-5">
           <CustomButton btnType="order">
