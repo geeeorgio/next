@@ -19,6 +19,7 @@
 
   --font-sans: var(--font-inter);
   --font-display: var(--font-playfair);
+  --font-robo: var(--font-roboto);
 
   --animate-cursor: cursor 1s step-end infinite;
   --animate-shimmer: shimmer 1.5s ease-in-out infinite;

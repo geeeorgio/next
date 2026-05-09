@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { legalLinks } from '@/lib/legal';
 import { navItemsList, socialList } from '@/lib/nav-items';
 
 const Footer = () => {
   return (
-    <footer className="bg-footer border-t border-t-gold-accent-muted/60 shadow-[0_4px_20px_rgba(201,168,76,0.3)]">
-      <div className="flex flex-col md:flex-row justify-between items-start p-4 md:p-5 lg:p-6 gap-2 md:gap-3 lg:gap-4">
+    <footer className="bg-footer flex flex-col gap-4 md:gap-5 lg:gap-6 xl:gap-7 border-t border-t-gold-accent-muted/60 shadow-[0_4px_20px_rgba(201,168,76,0.3)] p-4 md:p-5 lg:p-6">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-2 md:gap-3 lg:gap-4">
         <div className="flex flex-col gap-1.5 md:gap-2.5 lg:gap-3.5 xl:gap-5 items-start">
           <Link
             href="/"
@@ -45,15 +46,15 @@ const Footer = () => {
           </ul>
         </div>
 
-        <nav className="flex flex-col">
-          <span>Навігація</span>
-          <ul className="flex flex-col">
+        <nav className="flex flex-col items-start gap-1">
+          <span className="text-foreground text-xs md:text-sm">Навігація</span>
+          <ul className="flex flex-col gap-1">
             {navItemsList.map(({ href, label_ua }) => (
-              <li key={label_ua} className="">
-                <Link
-                  href={href}
-                  className={`relative px-2.5 py-2 text-xs lg:text-base xl:text-lg font-display font-semibold transition-all duration-300 text-foreground hover:text-gold-accent`}
-                >
+              <li
+                key={label_ua}
+                className="text-xs lg:text-sm transition-all duration-300 text-foreground-muted hover:text-gold-accent"
+              >
+                <Link href={href} className={`pt-2 pb-2`}>
                   {label_ua}
                 </Link>
               </li>
@@ -78,6 +79,20 @@ const Footer = () => {
             <li>3</li>
           </ul>
         </div>
+      </div>
+
+      <div className="flex w-full flex-col gap-3 md:gap-4 lg:gap-5">
+        <ul className="flex flex-col md:flex-row items-start p-2 md:p-3 lg:p-4 gap-3 md:gap-4 lg:gap-5 border-2 border-foreground">
+          {legalLinks.map(({ label, href }) => (
+            <li key={label} className="font-robo text-foreground font-semibold text-xs">
+              <Link href={href} className="p-2">
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+        <p className="text-xs text-foreground-muted">© Copyright 2026 Людмила Кирилюк.</p>
       </div>
     </footer>
   );
