@@ -5,7 +5,17 @@ import {
   LiaYoutube,
   LiaTelegramPlane,
 } from 'react-icons/lia';
-import { TbTargetArrow, TbChartBarPopular, TbShieldCheck, TbHeartHandshake } from 'react-icons/tb';
+import {
+  TbTargetArrow,
+  TbChartBarPopular,
+  TbShieldCheck,
+  TbHeartHandshake,
+  TbSearch,
+  TbChessKnight,
+  TbRocket,
+  TbChartInfographic,
+  TbArrowsMaximize,
+} from 'react-icons/tb';
 
 export const navItemsList = [
   { href: '/services', label_en: 'Services', label_ua: 'Послуги' },
@@ -78,5 +88,52 @@ export const servicesList = [
     href: '/services',
     label_ua: 'Комплексне ведення реклами',
     desc: 'Повний супровід рекламних кампаній: стратегія, запуск, аналітика, оптимізація та масштабування результатів.',
+  },
+];
+
+export const casesList = [
+  {
+    label_ua: 'Кейс 1',
+    desc: 'текст опису',
+  },
+  {
+    label_ua: 'Кейс 2',
+    desc: 'текст опису',
+  },
+  {
+    label_ua: 'Кейс 3',
+    desc: 'текст опису',
+  },
+  {
+    label_ua: 'Кейс 4',
+    desc: 'текст опису',
+  },
+];
+
+export const workSteps = [
+  {
+    text: `Аналіз та брифінг`,
+    text_en: '',
+    icon: TbSearch,
+  },
+  {
+    text: `Стратегія та плануваня`,
+    text_en: '',
+    icon: TbChessKnight,
+  },
+  {
+    text: `Запуск реклами`,
+    text_en: '',
+    icon: TbRocket,
+  },
+  {
+    text: `Оптимізація`,
+    text_en: '',
+    icon: TbChartInfographic,
+  },
+  {
+    text: `Масташбування`,
+    text_en: '',
+    icon: TbArrowsMaximize,
   },
 ];

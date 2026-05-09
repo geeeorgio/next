@@ -1,22 +1,23 @@
-'use client';
-
 import Link from 'next/link';
 
 import { servicesList } from '@/lib/nav-items';
 
 const Intro = () => {
   return (
-    <div className="flex flex-col bg-primary-dark/80 pt-2.5 pb-2.5 md:pt-3.5 md:pb-3.5 lg:pt-5 lg:pb-5 xl:pt-6 xl:pb-6 border-t border-t-gold-accent-muted/60 shadow-[0_-4px_20px_rgba(201,168,76,0.5)">
+    <div className="flex flex-col bg-linear-to-b from-primary-section to-secondary-section gap-2 md:gap-3 lg:gap-4 xl:gap-5 pt-2.5 pb-2.5 md:pt-4 md:pb-4 lg:pt-6 lg:pb-6 xl:pt-8 xl:pb-8 border-t border-t-gold-accent-muted/50">
+      <h3 className="text-base lg:text-xl xl:text-2xl font-semibold text-foreground pl-3 md:pl-4 lg:pl-6">
+        Послуги
+      </h3>
       <div className="flex flex-col md:flex-row pl-3 pr-3 md:pl-4 md:pr-4 lg:pl-6 lg:pr-6">
         <ul className="flex flex-col md:flex-row gap-3 md:gap-4 lg:gap-5 xl:gap-6 w-full">
           {servicesList.map(({ href, label_ua, desc }) => (
             <li
               key={label_ua}
-              className="flex flex-col flex-1 border border-gold-accent-muted rounded-xl items-center gap-2.5 p-6 bg-foreground-muted/10 hover:bg-foreground-muted/15 transition-all duration-300 backdrop-blur-md"
+              className="flex flex-col flex-1 border border-foreground-muted/10 rounded-xl items-center gap-2.5 p-6 bg-foreground-muted/10 hover:bg-foreground-muted/15 transition-all duration-300 backdrop-blur-xl"
             >
-              <h5 className="text-foreground font-semibold text-sm md:text-base lg:text-lg">
+              <h4 className="text-foreground font-semibold text-sm md:text-base lg:text-lg">
                 {label_ua}
-              </h5>
+              </h4>
               <span className="text-foreground/75 text-sm md:text-base">{desc}</span>
 
               <Link

@@ -13,7 +13,7 @@ const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header className="bg-header/60 w-full border-b border-b-gold-accent-muted/60 shadow-[0_-4px_20px_rgba(201,168,76,0.5)] sticky top-0 z-50 backdrop-blur-md">
+    <header className="bg-header/70 backdrop-blur-xl w-full border-b border-b-gold-accent-muted/60 shadow-[0_-4px_20px_rgba(201,168,76,0.5)] sticky top-0 z-50">
       <div className="flex flex-row items-center justify-between px-1 py-1 md:px-2 md:py-1.5 lg:px-3 lg:py-2">
         <Link
           href="/"
@@ -41,7 +41,7 @@ const Header = () => {
                 <li key={label_ua}>
                   <Link
                     href={href}
-                    className={`relative px-2.5 py-2 text-xs lg:text-base xl:text-lg font-display font-semibold transition-all duration-300
+                    className={`relative px-2.5 py-2 text-xs lg:text-base xl:text-lg font-display hover:[text-shadow:0_0_12px_rgba(224,184,79,0.35)] font-semibold transition-all duration-300
                       ${
                         isActive
                           ? 'text-gold-accent [text-shadow:0_0_12px_rgba(224,184,79,0.4)]'

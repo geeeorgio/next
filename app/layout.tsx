@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, Playfair_Display, Roboto_Mono } from 'next/font/google';
+import { EB_Garamond, Inter, Roboto_Mono } from 'next/font/google';
 
 import './globals.css';
 import Footer from '@/components/sections/Footer';
@@ -10,8 +10,8 @@ const inter = Inter({
   subsets: ['latin', 'cyrillic'],
 });
 
-const playfair = Playfair_Display({
-  variable: '--font-playfair',
+const garamond = EB_Garamond({
+  variable: '--font-garamond',
   subsets: ['latin', 'cyrillic'],
 });
 
@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html
       lang="uk"
-      className={`${inter.variable} ${playfair.variable} ${roboto.variable} h-full antialiased`}
+      className={`${inter.variable} ${garamond.variable} ${roboto.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <Header />

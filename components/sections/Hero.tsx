@@ -11,13 +11,13 @@ import Typewriter from '../ui/Typewriter';
 
 const Hero = () => {
   return (
-    <div className="relative w-full flex flex-col bg-linear-to-b from-primary-dark to-primary pt-2.5 pb-2.5 md:pt-3.5 md:pb-3.5 lg:pt-5 lg:pb-5 xl:pt-6 xl:pb-6 overflow-hidden p-1.5">
+    <div className="relative w-full flex flex-col bg-linear-to-b from-primary-dark to-primary-deep pt-2.5 pb-2.5 md:pt-4 md:pb-4 lg:pt-6 lg:pb-6 xl:pt-8 xl:pb-8 overflow-hidden p-1.5">
       <h1 className="hidden">
         Людмила Кирилюк. Таргетолог. СПЕЦІАЛІСТ З ІНТЕРНЕТ-МАРКЕТИНГУ. СИСТЕМНИЙ ТРАФІК ТА СТАБІЛЬНІ
         ЛІДИ з META та GOOGLE ADS
       </h1>
 
-      <div className="hidden md:flex absolute md:bottom-0 lg:top-0 right-0  pointer-events-none select-none w-[60vw] h-[60vh] md:w-[35vw] md:h-[70vh] lg:w-[30vw] lg:h-[80vh] xl:w-[35vw] xl:h-screen z-0">
+      <div className="hidden md:flex absolute md:bottom-0 lg:top-0 right-0  pointer-events-none select-none w-[60vw] h-[60vh] md:w-[35vw] md:h-[70vh] lg:w-[30vw] lg:h-[80vh] xl:w-[35vw] xl:h-screen z-0 before:absolute before:w-125 before:h-125 before:bg-green-accent/10 before:blur-[120px]">
         <Image
           src="/hero_logo.png"
           alt="Людмила Кирилюк"
@@ -71,11 +71,9 @@ const Hero = () => {
           <div className="flex flex-wrap gap-2 md:gap-3 lg:gap-4 mt-1.5">
             <Link
               href={'/order'}
-              className="w-full sm:w-auto relative overflow-hidden cursor-pointer py-1 px-2 md:py-2 md:px-3 lg:py-3 lg:px-4 bg-linear-to-b from-gold-accent via-gold-middle-accent to-gold-accent-muted rounded-xl text-primary-dark font-bold shadow-[0_10px_20px_-10px_rgba(224,184,79,0.5)] hover:shadow-[0_15px_30px_-10px_rgba(224,184,79,0.6)] hover:scale-[1.02] transition-all duration-300 flex items-center justify-center"
+              className="w-full sm:w-auto relative overflow-hidden cursor-pointer p-1 md:p-2 lg:p-3 xl:p-4 bg-linear-to-b from-gold-accent via-gold-middle-accent to-gold-accent-muted rounded-xl shadow-[0_10px_20px_-10px_rgba(224,184,79,0.5)] hover:shadow-[0_15px_30px_-10px_rgba(224,184,79,0.6)] hover:scale-[1.02] transition-all duration-300 flex items-center justify-center text-primary-deep text-sm md:text-base"
             >
-              <span className="text-primary-dark font-bold text-sm md:text-base">
-                Отримати консультацію
-              </span>
+              Отримати консультацію
             </Link>
             <CustomButton className="w-full sm:w-auto">
               <span className="text-foreground font-bold text-sm md:text-base">
@@ -86,10 +84,10 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-row gap-2 lg:gap-3 w-full bg-primary-dark/40 border border-foreground-muted/20 rounded-2xl p-2 lg:p-4 backdrop-blur-md">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-row gap-2 lg:gap-3 w-full bg-primary-dark/40 border border-foreground-muted/25 rounded-2xl p-2 lg:p-4 backdrop-blur-xl">
           {infoList.map(({ text, icon: Icon }) => (
             <div key={text} className="flex flex-row items-center gap-3 flex-1 min-w-0 group">
-              <div className="flex shrink-0 p-3 border border-gold-accent/30 rounded-xl items-center justify-center bg-gold-accent/5 group-hover:bg-gold-accent/10 transition-colors">
+              <div className="flex shrink-0 p-3 border border-gold-middle-accent/10 rounded-xl items-center justify-center bg-foreground-muted/5 group-hover:bg-foreground-muted/10 transition-colors">
                 <Icon className="text-gold-middle-accent" strokeWidth={1} size={22} />
               </div>
               <span className="text-foreground/90 text-[11px] md:text-xs xl:text-sm leading-snug">
