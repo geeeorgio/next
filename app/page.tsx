@@ -1,4 +1,6 @@
+import Banner from '@/components/sections/Banner';
 import Cases from '@/components/sections/Cases';
+import Connect from '@/components/sections/Connect';
 import Hero from '@/components/sections/Hero';
 import Intro from '@/components/sections/Intro';
 import Steps from '@/components/sections/Steps';
@@ -7,9 +9,10 @@ import Section from '@/components/ui/Section';
 const Home = () => {
   return (
     <>
-      <Section>
+      <section>
         <Hero />
-      </Section>
+      </section>
+
       <Section>
         <Intro />
       </Section>
@@ -18,6 +21,14 @@ const Home = () => {
       </Section>
       <Section>
         <Steps />
+      </Section>
+
+      <section>
+        <Banner />
+      </section>
+
+      <Section>
+        <Connect />
       </Section>
     </>
   );

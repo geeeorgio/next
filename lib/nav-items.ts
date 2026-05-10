@@ -1,3 +1,5 @@
+import { FaMeta } from 'react-icons/fa6';
+import { HiOutlineComputerDesktop } from 'react-icons/hi2';
 import {
   LiaInstagram,
   LiaFacebookSquare,
@@ -5,6 +7,7 @@ import {
   LiaYoutube,
   LiaTelegramPlane,
 } from 'react-icons/lia';
+import { SiGoogleads } from 'react-icons/si';
 import {
   TbTargetArrow,
   TbChartBarPopular,
@@ -25,21 +28,13 @@ export const navItemsList = [
   { href: '/reviews', label_en: 'Reviews', label_ua: 'Відгуки' },
   { href: '/blog', label_en: 'Blog', label_ua: 'Блог' },
   { href: '/contacts', label_en: 'Contacts', label_ua: 'Контакти' },
-  { href: '/order', label_en: `Start a Project`, label_ua: 'Почати проєкт' },
-] as const;
-
-export const stats = [
-  { value: '2+ роки', label: 'досвіду' },
-  { value: '15+', label: 'проєктів' },
-  { value: 'Україна та Європа', label: 'міжнародні клієнти' },
 ] as const;
 
 export const skills = [
-  'більше заявок з реклами',
-  'цільових клієнтів',
-  'стабільний потік продажів',
-  'заявки без зливу бюджету',
-  'мастшабування бізнесу',
+  'таргетована реклама в Meta Ads',
+  'пошукова реклама в Google Ads',
+  'просування на Google Картах',
+  'комплексні маркетингові стратегії',
 ];
 
 export const infoList = [
@@ -77,17 +72,20 @@ export const servicesList = [
   {
     href: '/services',
     label_ua: 'Таргетована реклама (Meta Ads)',
-    desc: 'Налаштування та оптимізація реклами в Facebook та Instagram для стабільного потоку заявок та продажів.',
+    desc: 'Залучення гарячих заявок через Facebook та Instagram. Створюю рекламні воронки, проводжу А/В тестування та масштабую найприбутковіші аудиторії для зниження ціни ліда',
+    icon: FaMeta,
   },
   {
     href: '/services',
-    label_ua: 'Реклама в Google Ads',
-    desc: 'Пошукова, медійна та YouTube-реклама для залучення клієнтів, які вже шукають ваш продукт або послугу.',
+    label_ua: 'Реклама в Google Ads та на Картах',
+    desc: 'Перехоплення готового попиту. Налаштовую пошукову рекламу (PPC) та виводжу ваш локальний бізнес у топ на Google Maps, щоб клієнти знаходили вас першими',
+    icon: SiGoogleads,
   },
   {
     href: '/services',
-    label_ua: 'Комплексне ведення реклами',
-    desc: 'Повний супровід рекламних кампаній: стратегія, запуск, аналітика, оптимізація та масштабування результатів.',
+    label_ua: 'Створення сайтів під ключ',
+    desc: 'Розробка сучасних багатосторінкових сайтів та лендінгів. Створюємо швидкі, адаптивні платформи, які ідеально оптимізовані під запуск трафіку та високу конверсію',
+    icon: HiOutlineComputerDesktop,
   },
 ];
 
@@ -112,27 +110,27 @@ export const casesList = [
 
 export const workSteps = [
   {
-    text: `Аналіз та брифінг`,
+    text: `Аналіз проєкту, клієнтів та конкурентів`,
     text_en: '',
     icon: TbSearch,
   },
   {
-    text: `Стратегія та плануваня`,
+    text: `Індивідуальна стратегія просування`,
     text_en: '',
     icon: TbChessKnight,
   },
   {
-    text: `Запуск реклами`,
+    text: `Налаштування, запуск та оптимізація реклами`,
     text_en: '',
     icon: TbRocket,
   },
   {
-    text: `Оптимізація`,
+    text: `Регулярна прозора звітність`,
     text_en: '',
     icon: TbChartInfographic,
   },
   {
-    text: `Масташбування`,
+    text: `Супровід та масштабування`,
     text_en: '',
     icon: TbArrowsMaximize,
   },

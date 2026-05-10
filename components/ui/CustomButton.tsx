@@ -13,7 +13,6 @@ const CustomButton = ({ children, handlePress }: CustomButtonProps) => {
       type="button"
       className="relative overflow-hidden cursor-pointer
       py-1 px-3 md:py-2 md:px-4 lg:py-3 lg:px-6
-      backdrop-blur-xl
       backdrop-saturate-200
       border border-gold-accent-muted
       rounded-xl
