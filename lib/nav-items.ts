@@ -70,7 +70,6 @@ export const socialList = [
 
 export const servicesList = [
   {
-    href: '/services',
     label_ua: 'Таргетована реклама (Meta Ads)',
     desc: 'Залучення гарячих заявок через Facebook та Instagram. Створюю рекламні воронки, проводжу А/В тестування та масштабую найприбутковіші аудиторії для зниження ціни ліда',
     icon: FaMeta,

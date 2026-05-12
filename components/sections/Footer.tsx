@@ -7,7 +7,7 @@ import LogoLink from '../ui/LogoLink';
 
 const Footer = () => {
   return (
-    <footer className="bg-footer flex flex-col gap-4 md:gap-5 lg:gap-7 xl:gap-10 border-t border-t-gold-accent-muted/60 shadow-[0_-4px_20px_rgba(201,168,76,0.3)] px-3 md:px-4 lg:px-6 pt-4 pb-4 md:pt-8 md:pb-8 lg:pt-10 lg:pb-10 xl:pt-16 xl:pb-16">
+    <footer className="bg-footer flex flex-col gap-4 sm:gap-5 md:gap-8 lg:gap-12 xl:gap-14 border-t border-t-gold-accent-muted/60 shadow-[0_-4px_20px_rgba(201,168,76,0.3)] px-3 md:px-4 lg:px-6 pt-4 pb-4 md:pt-8 md:pb-8 lg:pt-10 lg:pb-10 xl:pt-16 xl:pb-16">
       <div className="flex flex-col md:flex-row justify-between items-start gap-2 md:gap-3 lg:gap-4">
         <div className="flex flex-col gap-1.5 md:gap-2.5 lg:gap-3.5 xl:gap-5 items-start">
           <LogoLink />
@@ -72,8 +72,11 @@ const Footer = () => {
       <div className="flex w-full flex-col gap-3 md:gap-4 lg:gap-5">
         <ul className="flex flex-col md:flex-row items-start p-2 md:p-3 lg:p-4 gap-3 md:gap-4 lg:gap-5 border-2 border-foreground">
           {legalLinks.map(({ label, href }) => (
-            <li key={label} className="font-robo text-foreground font-semibold text-sm">
-              <Link href={href} className="p-2">
+            <li
+              key={label}
+              className="relative font-robo text-foreground font-semibold text-sm after:absolute after:bottom-0 after:left-2 after:h-px after:w-0 after:bg-foreground/90 after:transition-all after:duration-300 hover:after:w-[calc(100%-16px)]"
+            >
+              <Link href={href} className="p-2 inline-block">
                 {label}
               </Link>
             </li>

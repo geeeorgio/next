@@ -4,7 +4,7 @@ import ServicesLink from '../ui/ServicesLink';
 
 const Cases = () => {
   return (
-    <div className="flex flex-col relative overflow-hidden gap-3 sm:gap-4 md:gap-6 lg:gap-10 xl:gap-12">
+    <div className="flex flex-col relative overflow-hidden gap-5 sm:gap-7 md:gap-8 lg:gap-12 xl:gap-14">
       <h2 className="text-base lg:text-xl xl:text-2xl font-semibold text-foreground pl-3 md:pl-4 lg:pl-6">
         Кейси з digital просування
       </h2>

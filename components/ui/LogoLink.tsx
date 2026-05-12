@@ -6,8 +6,8 @@ const LogoLink = () => {
     <Link
       href="/"
       className="relative w-10 h-10 md:w-15 md:h-15 lg:w-20 lg:h-20
-             filter drop-shadow-[0_5px_15px_rgba(224,184,79,0.4)]
-             hover:drop-shadow-[0_8px_20px_rgba(224,184,79,0.6)]
+             filter drop-shadow-[0_5px_15px_rgba(214,177,104,0.22)]
+             hover:drop-shadow-[0_8px_20px_rgba(244,216,143,0.32)]
              transition-all duration-300"
     >
       <Image

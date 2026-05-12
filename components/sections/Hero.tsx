@@ -62,7 +62,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-row gap-2 lg:gap-3 w-full bg-primary-dark/40 border border-foreground-muted/25 rounded-2xl p-2 lg:p-6 backdrop-blur-xl">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-row gap-2 lg:gap-3 w-full bg-primary-dark/40 border border-foreground-muted/25 rounded-2xl p-2 lg:p-6">
           {infoList.map(({ text, icon: Icon }) => (
             <div key={text} className="flex flex-row items-center gap-3 flex-1 min-w-0 group">
               <div className="flex shrink-0 p-3 border border-gold-middle-accent/25 rounded-xl items-center justify-center bg-white/5 group-hover:bg-white/10 transition-colors">

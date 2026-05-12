@@ -1,31 +1,34 @@
 @import 'tailwindcss';
 
 @theme inline {
-  --color-primary: #031c0d;
-  --color-primary-dark: #03150f;
-  --color-primary-deep: #020f0b;
+  --color-primary: #042213;
+  --color-primary-dark: #031a10;
+  --color-primary-deep: #020d08;
 
-  --color-primary-section: #08261b;
-  --color-secondary-section: #23473b;
+  --color-primary-section: #0a2d1f;
+  --color-secondary-section: #1a3d31;
 
   --color-header: #04110d;
-  --color-footer: #020906;
+  --color-footer: #02110b;
 
   --color-card-dark: #071711;
 
-  --color-foreground: #e5e7eb;
-  --color-foreground-muted: #9ca3af;
+  --color-foreground: #f6f1e7;
+  --color-foreground-muted: #c9cdc7;
 
   --color-nav-hover: #064e3b;
-  --color-green-accent: #b4d333;
+  --color-green-accent: #aebe48;
 
-  --color-gold-accent: #f3d077;
-  --color-gold-middle-accent: #e6c76a;
-  --color-gold-accent-muted: #8b6a21;
+  --color-gold-accent: #f4d88f;
+  --color-gold-middle-accent: #d6b168;
+  --color-gold-accent-muted: #967028;
+  --color-gold-accent-sand: #846326;
 
   --font-sans: var(--font-inter);
   --font-display: var(--font-garamond);
   --font-robo: var(--font-roboto);
+
+  --ease-learn-more: cubic-bezier(0.65, 0, 0.076, 1);
 
   --animate-cursor: cursor 1s step-end infinite;
   --animate-shimmer: shimmer 1.5s ease-in-out infinite;
@@ -46,21 +49,30 @@
   }
 }
 
+@layer utilities {
+  .transition-learn-more {
+    transition-property: all;
+    transition-duration: 450ms;
+    transition-timing-function: var(--ease-learn-more);
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  color: var(--color-foreground-muted);
+  color: var(--color-foreground);
   font-family: var(--font-inter);
 
   background-color: #031a0f;
 
   background-image:
     radial-gradient(ellipse 80% 40% at 50% -5%, rgba(243, 208, 119, 0.07), transparent),
-    radial-gradient(circle at 50% 40%, rgba(255, 255, 255, 0.015), transparent 45%),
+    radial-gradient(circle at 50% 35%, rgba(255, 255, 255, 0.025), transparent 42%),
     radial-gradient(ellipse 50% 50% at 100% 0%, rgba(6, 38, 23, 0.45), transparent),
     radial-gradient(ellipse 60% 60% at 0% 100%, rgba(10, 45, 30, 0.35), transparent),
+    radial-gradient(ellipse 70% 40% at 50% 120%, rgba(52, 89, 68, 0.18), transparent),
     linear-gradient(180deg, #031a0f 0%, #042314 20%, #031b10 50%, #02150d 75%, #02130c 100%);
 
   background-repeat: no-repeat;
