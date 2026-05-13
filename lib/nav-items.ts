@@ -20,6 +20,9 @@ import {
   TbArrowsMaximize,
 } from 'react-icons/tb';
 
+import type { LandingFormListItemType } from '@/types/form-schema';
+import type { CaseListItemType, ServicesListItemType, SocialListItemType } from '@/types/general';
+
 export const navItemsList = [
   { href: '/services', label_en: 'Services', label_ua: 'Послуги' },
   { href: '/about', label_en: 'About', label_ua: 'Про мене' },
@@ -60,7 +63,7 @@ export const infoList = [
   },
 ];
 
-export const socialList = [
+export const socialList: SocialListItemType[] = [
   { label: 'telegram', url: '', icon: LiaTelegramPlane },
   { label: 'instagram', url: '', icon: LiaInstagram },
   { label: 'youtube', url: '', icon: LiaYoutube },
@@ -68,42 +71,80 @@ export const socialList = [
   { label: 'linkedin', url: '', icon: LiaLinkedin },
 ];
 
-export const servicesList = [
+export const servicesList: ServicesListItemType[] = [
   {
     label_ua: 'Таргетована реклама (Meta Ads)',
     desc: 'Залучення гарячих заявок через Facebook та Instagram. Створюю рекламні воронки, проводжу А/В тестування та масштабую найприбутковіші аудиторії для зниження ціни ліда',
     icon: FaMeta,
   },
   {
-    href: '/services',
     label_ua: 'Реклама в Google Ads та на Картах',
     desc: 'Перехоплення готового попиту. Налаштовую пошукову рекламу (PPC) та виводжу ваш локальний бізнес у топ на Google Maps, щоб клієнти знаходили вас першими',
     icon: SiGoogleads,
   },
   {
-    href: '/services',
     label_ua: 'Створення сайтів під ключ',
     desc: 'Розробка сучасних багатосторінкових сайтів та лендінгів. Створюємо швидкі, адаптивні платформи, які ідеально оптимізовані під запуск трафіку та високу конверсію',
     icon: HiOutlineComputerDesktop,
   },
 ];
 
-export const casesList = [
+export const casesList: CaseListItemType[] = [
   {
-    label_ua: 'Кейс 1',
-    desc: 'текст опису',
+    id: '11',
+    label_ua: '21111111111344343',
+    desc: 'string',
+    long_desc: 'string',
+    img: 'string',
+    tags: [],
+    location: [],
+    placement: 'string',
+    budget: 1,
+    task: 'string',
+    result: 'string',
+    created: '05.05.2026',
   },
   {
-    label_ua: 'Кейс 2',
-    desc: 'текст опису',
+    id: '21',
+    label_ua: '2323443',
+    desc: 'string',
+    long_desc: 'string',
+    img: 'string',
+    tags: [],
+    location: [],
+    placement: 'string',
+    budget: 1,
+    task: 'string',
+    result: 'string',
+    created: '15.03.2026',
   },
   {
-    label_ua: 'Кейс 3',
-    desc: 'текст опису',
+    id: '31',
+    label_ua: '2',
+    desc: 'string',
+    long_desc: 'string',
+    img: 'string',
+    tags: [],
+    location: [],
+    placement: 'string',
+    budget: 1,
+    task: 'string',
+    result: 'string',
+    created: '20.01.2026',
   },
   {
-    label_ua: 'Кейс 4',
-    desc: 'текст опису',
+    id: '41',
+    label_ua: '212212323232323',
+    desc: 'string',
+    long_desc: 'string',
+    img: 'string',
+    tags: [],
+    location: [],
+    placement: 'string',
+    budget: 1,
+    task: 'string',
+    result: 'string',
+    created: '10.02.2026',
   },
 ];
 
@@ -132,5 +173,48 @@ export const workSteps = [
     text: `Супровід та масштабування`,
     text_en: '',
     icon: TbArrowsMaximize,
+  },
+];
+
+export const landingFormList: LandingFormListItemType[] = [
+  {
+    _id: 'user_name',
+    _label_ua: 'Як до вас звертатися?',
+    _label_en: '',
+    _placeholder_ua: `Ваше ім'я`,
+    _placeholder_en: 'Your name',
+    _name: 'name',
+    _type: 'text',
+    _required: true,
+  },
+  {
+    _id: 'user_phone_number',
+    _label_ua: 'Номер телефону',
+    _label_en: '',
+    _placeholder_ua: '+38 (099) 999-99-99',
+    _placeholder_en: '+7 (999) 000-00-00',
+    _name: 'phone_number',
+    _type: 'tel',
+    _required: true,
+  },
+  {
+    _id: 'user_link',
+    _label_ua: 'Посилання на сайт або соцмережі',
+    _label_en: '',
+    _placeholder_ua: 'https://',
+    _placeholder_en: 'https://',
+    _name: 'link',
+    _type: 'url',
+    _required: false,
+  },
+  {
+    _id: 'user_telegram',
+    _label_ua: 'Нікнейм в telegram',
+    _label_en: '',
+    _placeholder_ua: '@nickname',
+    _placeholder_en: '@nickname',
+    _name: 'telegram',
+    _type: 'text',
+    _required: false,
   },
 ];

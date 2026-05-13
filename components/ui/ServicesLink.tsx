@@ -13,9 +13,9 @@ const ServicesLink = ({ src, text }: ServicesLinkProps) => {
       href={src}
       className="group relative inline-flex items-center justify-center px-4 py-4 lg:px-6 lg:py-5 active:scale-95 transition-transform duration-500 overflow-hidden"
     >
-      <div className="absolute inset-y-0 left-0 w-0 bg-linear-to-r from-gold-accent-sand via-gold-middle-accent/85 to-gold-accent/60 transition-[width] duration-500 ease-learn-more group-hover:w-[50%]" />
+      <div className="absolute inset-y-0 left-0 w-0 bg-linear-to-r from-gold-accent-sand via-gold-middle-accent/85 to-gold-accent/70 transition-[width] duration-500 ease-learn-more group-hover:w-[50%]" />
 
-      <div className="absolute inset-y-0 right-0 w-0 bg-linear-to-l from-gold-accent-sand via-gold-middle-accent/85 to-gold-accent/60 transition-[width] duration-500 ease-learn-more group-hover:w-[50%]" />
+      <div className="absolute inset-y-0 right-0 w-0 bg-linear-to-l from-gold-accent-sand via-gold-middle-accent/85 to-gold-accent/70 transition-[width] duration-500 ease-learn-more group-hover:w-[50%]" />
 
       <span className="absolute inset-0 z-10">
         <span className="absolute left-0 top-0 w-3 h-3 border-t-2 border-l-2 border-foreground-muted group-hover:border-foreground transition-all duration-500 group-hover:w-5 group-hover:h-5" />

@@ -13,7 +13,7 @@ const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header className="bg-header/80 backdrop-blur-xl w-full border-b border-b-gold-accent-muted/60 shadow-[0_4px_16px_rgba(201,168,76,0.3)] sticky top-0 z-50">
+    <header className="bg-header/70 backdrop-blur-xl w-full border-b border-b-gold-accent-muted/60 shadow-[0_4px_16px_rgba(201,168,76,0.3)] sticky top-0 z-50">
       <div className="flex flex-row items-center justify-between px-1 py-1 md:px-2 md:py-1.5 lg:px-3 lg:py-2">
         <LogoLink />
 
