@@ -7,7 +7,7 @@ import LogoLink from '../ui/LogoLink';
 
 const Footer = () => {
   return (
-    <footer className="bg-footer flex flex-col gap-4 sm:gap-5 md:gap-8 lg:gap-12 xl:gap-14 border-t border-t-gold-accent-muted/60 shadow-[0_-4px_20px_rgba(201,168,76,0.3)] px-3 md:px-4 lg:px-6 pt-4 pb-4 md:pt-8 md:pb-8 lg:pt-10 lg:pb-10 xl:pt-16 xl:pb-16">
+    <footer className="bg-footer flex flex-col gap-4 sm:gap-5 md:gap-8 lg:gap-12 xl:gap-14 border-t border-t-gold-accent-muted/35 shadow-[0_-4px_20px_rgba(201,168,76,0.3)] px-3 md:px-4 lg:px-6 py-4 md:py-8 lg:py-10 xl:py-14">
       <div className="flex flex-col md:flex-row justify-between items-start gap-2 md:gap-3 lg:gap-4">
         <div className="flex flex-col gap-1.5 md:gap-2.5 lg:gap-3.5 xl:gap-5 items-start">
           <LogoLink />
@@ -23,7 +23,7 @@ const Footer = () => {
                   target="_blank"
                   rel="nofollow noopener"
                   aria-label={label}
-                  className="flex items-center justify-center w-10 h-10 rounded-xl border border-gold-accent-muted/50 bg-foreground-muted/5 text-gold-accent hover:bg-gold-accent hover:text-primary-dark transition-all duration-300 shadow-sm"
+                  className="flex items-center justify-center w-10 h-10 rounded-xl border border-gold-accent-muted/50 bg-primary-section/70 text-gold-accent hover:bg-gold-accent hover:text-primary-dark transition-all duration-300 shadow-sm"
                 >
                   <Icon size={24} />
                 </a>
@@ -70,11 +70,11 @@ const Footer = () => {
       </div>
 
       <div className="flex w-full flex-col gap-3 md:gap-4 lg:gap-5">
-        <ul className="flex flex-col md:flex-row items-start p-2 md:p-3 lg:p-4 gap-3 md:gap-4 lg:gap-5 border-2 border-foreground">
+        <ul className="flex flex-col md:flex-row items-start p-2 md:p-3 lg:p-4 gap-3 md:gap-4 lg:gap-5 border-2 border-foreground-muted">
           {legalLinks.map(({ label, href }) => (
             <li
               key={label}
-              className="relative font-robo text-foreground font-semibold text-sm after:absolute after:bottom-0 after:left-2 after:h-px after:w-0 after:bg-foreground/90 after:transition-all after:duration-300 hover:after:w-[calc(100%-16px)]"
+              className="relative font-robo text-foreground/90 font-semibold text-sm after:absolute after:bottom-0 after:left-2 after:h-px after:w-0 after:bg-foreground/90 after:transition-all after:duration-300 hover:after:w-[calc(100%-16px)]"
             >
               <Link href={href} className="p-2 inline-block">
                 {label}

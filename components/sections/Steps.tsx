@@ -5,7 +5,7 @@ import ServicesLink from '../ui/ServicesLink';
 const Steps = () => {
   return (
     <div className="flex flex-col relative overflow-hidden gap-5 sm:gap-7 md:gap-8 lg:gap-12 xl:gap-14">
-      <h2 className="text-base lg:text-xl xl:text-2xl font-semibold text-foreground pl-3 md:pl-4 lg:pl-6">
+      <h2 className="text-base lg:text-xl xl:text-2xl font-black pl-3 md:pl-4 lg:pl-6 text-gold-middle-accent uppercase tracking-widest">
         Етапи роботи таргетованної реклами
       </h2>
 

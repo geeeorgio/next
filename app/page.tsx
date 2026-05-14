@@ -10,9 +10,7 @@ import Section from '@/components/ui/Section';
 const Home = () => {
   return (
     <>
-      <section>
-        <Hero />
-      </section>
+      <Hero />
 
       <Section>
         <Me />
@@ -27,9 +25,7 @@ const Home = () => {
         <Steps />
       </Section>
 
-      <section>
-        <Banner />
-      </section>
+      <Banner />
 
       <Section>
         <Connect />

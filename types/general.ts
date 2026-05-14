@@ -20,10 +20,10 @@ export interface CaseListItemType {
   desc: string;
   long_desc: string;
   img: string;
-  tags: [];
-  location: [];
+  tags: string[];
+  location: string[];
   placement: string;
-  budget: number;
+  budget: string;
   task: string;
   result: string;
   created: string;

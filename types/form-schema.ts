@@ -2,6 +2,7 @@ import * as z from 'zod';
 
 const phoneRegex = /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s0-9])+$/;
 const usernameRegex = /^[a-zA-Zа-яА-ЯіІїЇєЄґҐ\s'-]{2,20}$/;
+const linkRegex = /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([\/\w .-]*)*\/?(\?.*)?$/;
 
 export const FORM_NAMES_LIST = ['name', 'phone_number', 'link', 'telegram'] as const;
 export type FormNamesTypes = (typeof FORM_NAMES_LIST)[number];
@@ -32,16 +33,14 @@ export const landingFormSchema = z.object({
     .regex(phoneRegex, 'Невірний формат номера')
     .or(z.literal('')),
   link: z
-    .url({
-      protocol: /^https$/,
-      error: 'Будь ласка надайте посилання на безпечний ресурс',
-    })
-    .normalize()
+    .string()
+    .trim()
+    .regex(linkRegex, 'Будь ласка, введіть коректне посилання')
     .or(z.literal(''))
     .optional(),
   telegram: z
     .string()
-    .startsWith('@', 'Можливо ви забули додати: @ на початку?')
+    .startsWith('@', 'Можливо забули додати: @ на початку?')
     .or(z.literal(''))
     .optional(),
 });

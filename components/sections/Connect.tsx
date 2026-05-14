@@ -2,7 +2,10 @@ import LandingForm from '../ui/LandingForm';
 
 const Connect = () => {
   return (
-    <div className="bg-primary-deep rounded-xl flex flex-col md:flex-row gap-2.5 sm:gap-3.5 md:gap-5">
+    <div
+      id="connect-section"
+      className="bg-primary-deep rounded-xl flex flex-col md:flex-row gap-2.5 sm:gap-3.5 md:gap-5 border border-white/10"
+    >
       <div className="flex flex-col justify-between w-full gap-7 md:w-1/2 p-4 md:p-6 lg:p-7 xl:p-8">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-bold text-foreground/95">
           {`Залиште заявку, щоб обговорити `}
@@ -16,7 +19,7 @@ const Connect = () => {
           аудит із рекомендаціями для покращення.
         </p>
       </div>
-      <div className="flex flex-col justify-between w-full md:w-1/2 p-4 md:p-6 lg:p-7 xl:p-8">
+      <div className="flex flex-col justify-between w-full md:w-1/2 p-5 md:p-7 lg:p-8 xl:p-9">
         <div className="flex flex-col">
           <LandingForm />
         </div>

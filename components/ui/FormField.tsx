@@ -1,3 +1,5 @@
+'use client';
+
 import type { Control, FieldErrors, UseFormRegister } from 'react-hook-form';
 import { Controller } from 'react-hook-form';
 import { PatternFormat } from 'react-number-format';
@@ -13,6 +15,7 @@ interface FormFieldProps {
 
 const FormField = ({ item, register, control, errors }: FormFieldProps) => {
   const error = errors[item._name];
+  const inputStyle = `outline-none text-sm border rounded-xl px-4 py-4 bg-transparent transition-all duration-300 ${error ? 'border-red-500/50 focus:border-red-500' : 'border-foreground-muted/30 focus:border-gold-accent/50 focus:ring-1 focus:ring-gold-accent/20'}`;
 
   return (
     <div className="flex flex-col relative group">
@@ -36,8 +39,7 @@ const FormField = ({ item, register, control, errors }: FormFieldProps) => {
               value={value}
               onValueChange={(values) => onChange(values.value)}
               placeholder={item._placeholder_ua}
-              className={`outline-none text-sm border rounded-xl px-4 py-4 bg-transparent transition-all duration-300
-                ${error ? 'border-red-500/50 focus:border-red-500' : 'border-foreground-muted/30 focus:border-gold-accent/50 focus:ring-1 focus:ring-gold-accent/20'}`}
+              className={inputStyle}
             />
           )}
         />
@@ -49,12 +51,13 @@ const FormField = ({ item, register, control, errors }: FormFieldProps) => {
           placeholder={item._placeholder_ua}
           maxLength={item._name === 'name' ? 20 : undefined}
           aria-invalid={error ? 'true' : 'false'}
-          className={`outline-none text-sm border rounded-xl px-4 py-4 bg-transparent transition-all duration-300
-            ${error ? 'border-red-500/50 focus:border-red-500' : 'border-foreground-muted/30 focus:border-gold-accent/50 focus:ring-1 focus:ring-gold-accent/20'}`}
+          className={inputStyle}
         />
       )}
 
-      {error && <span className="text-[10px] text-red-500 mt-1 ml-2">{error.message}</span>}
+      {error && (
+        <span className="absolute -bottom-4 left-2 text-[10px] text-red-500">{error.message}</span>
+      )}
     </div>
   );
 };
