@@ -15,14 +15,13 @@ interface FormFieldProps {
 
 const FormField = ({ item, register, control, errors }: FormFieldProps) => {
   const error = errors[item._name];
-  const inputStyle = `outline-none text-sm border rounded-xl px-4 py-4 bg-transparent transition-all duration-300 ${error ? 'border-red-500/50 focus:border-red-500' : 'border-foreground-muted/30 focus:border-gold-accent/50 focus:ring-1 focus:ring-gold-accent/20'}`;
+  const inputStyle = `outline-none text-sm border rounded-xl px-4 py-4 bg-transparent text-foreground transition-all duration-300 ${error ? 'border-red-500/80 focus:border-red-500' : 'border-foreground-muted/30 focus:border-gold-accent-muted focus:ring-1 focus:ring-gold-accent/20'}`;
 
   return (
     <div className="flex flex-col relative group">
       <label
         htmlFor={item._name}
-        className={`absolute left-4 -top-2.5 font-semibold text-xs bg-form px-2 transition-colors group-focus-within:text-gold-accent
-          ${error ? 'text-red-500/80 group-focus-within:text-red-500' : 'text-foreground'}`}
+        className={`absolute left-4 -top-2.5 font-semibold text-xs bg-form px-2 transition-colors group-focus-within:text-gold-accent-muted ${error ? 'text-red-500/80 group-focus-within:text-red-500' : 'text-foreground-muted'}`}
       >
         {item._label_ua}
       </label>

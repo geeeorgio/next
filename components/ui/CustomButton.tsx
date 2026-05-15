@@ -11,11 +11,7 @@ const CustomButton = ({ children, className, handlePress }: CustomButtonProps) =
     <button
       onClick={handlePress}
       type="button"
-      className={`relative overflow-hidden cursor-pointer
-      py-2 px-2
-      border border-gold-accent-muted/45 hover:border-gold-middle-accent/65
-      rounded-xl flex flex-row items-center justify-center gap-2
-      bg-primary-section/35 hover:bg-secondary-section/45 transition-all duration-500 ease-out active:scale-95 ${className ?? ''}`}
+      className={`relative overflow-hidden cursor-pointer py-2 sm:py-3 lg:py-4 px-2 md:px-3 lg:px:5 rounded-xl flex items-center justify-center gap-2 bg-primary-deep/90 text-gold-accent border border-gold-middle-accent/50 shadow-[0_4px_12px_rgba(2,15,10,0.08)] hover:bg-primary-dark hover:border-gold-middle-accent/70 hover:shadow-[0_6px_20px_rgba(2,15,10,0.12)] transition-all duration-300 ease-out active:scale-95 font-bold text-xs md:text-sm ${className ?? ''}`}
     >
       {children}
     </button>

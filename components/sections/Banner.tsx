@@ -5,14 +5,14 @@ import ScrollLink from '../ui/ScrollLink';
 
 const Banner = () => {
   return (
-    <div className="relative overflow-hidden flex flex-col bg-linear-to-b from-primary-deep via-primary-dark to-primary-deep/35 gap-2 md:gap-3 lg:gap-4 xl:gap-5 py-5 md:py-10 lg:py-16 xl:py-20 px-3 md:px-4 lg:px-6 border-t border-t-gold-accent-muted/50">
+    <div className="relative overflow-hidden flex flex-col bg-primary-dark gap-2 md:gap-3 lg:gap-4 xl:gap-5 py-5 md:py-10 lg:py-16 xl:py-20 px-3 md:px-4 lg:px-6 shadow-[0_-20px_50px_rgba(2,15,10,0.5),0_20px_50px_rgba(2,15,10,0.5),0_0_30px_rgba(212,175,55,0.05)]">
       <div className="flex flex-col md:flex-row pl-3 pr-3 md:pl-4 md:pr-4 lg:pl-6 lg:pr-6 gap-6 items-center lg:gap-8 xl:gap-10">
-        <div className="flex flex-col flex-1 gap-3 md:gap-5 lg:gap-7 xl:gap-8">
+        <div className="flex flex-col flex-1 gap-4 md:gap-6 lg:gap-8 xl:gap-10">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-foreground leading-tight uppercase">
             Хочете такі ж <br />
-            <span className="text-gold-accent">результати?</span>
+            <span className="text-gold-accent-muted">результати?</span>
           </h2>
-          <p className="text-foreground/70 text-lg md:text-xl max-w-xl">
+          <p className="text-foreground/70 text-sm md:text-lg max-w-lg">
             Дізнайтесь, як підвищити ефективність ваших рекламних кампаній та отримати кращі
             результати за той самий бюджет
           </p>

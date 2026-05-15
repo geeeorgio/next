@@ -50,8 +50,8 @@ const LandingForm = () => {
           type="submit"
           disabled={isSubmitting}
           className="
-            relative cursor-pointer disabled:cursor-not-allowed flex w-full sm:w-2/3 md:w-full lg:w-3/4 self-center items-center justify-center overflow-hidden rounded-xl border border-gold-accent-muted/50
-            bg-primary-deep px-5 py-4 text-xs md:text-sm font-bold uppercase tracking-widest text-gold-accent
+            relative cursor-pointer disabled:cursor-not-allowed flex w-full self-center items-center justify-center overflow-hidden rounded-xl border border-gold-accent-muted/80
+            bg-primary-deep px-5 py-4 text-xs lg:text-sm font-bold uppercase tracking-widest text-gold-accent
             transition-all duration-400 hover:border-gold-accent hover:shadow-[0_0_20px_rgba(244,216,143,0.15)]
             active:scale-95 disabled:opacity-50 group
           "

@@ -8,9 +8,12 @@ import ServicesLink from '../ui/ServicesLink';
 const Cases = () => {
   return (
     <div className="flex flex-col relative overflow-hidden gap-5 sm:gap-7 md:gap-8 lg:gap-12 xl:gap-14">
-      <h2 className="text-base lg:text-xl xl:text-2xl font-black pl-3 md:pl-4 lg:pl-6 text-gold-middle-accent uppercase tracking-widest">
-        Кейси з digital просування
-      </h2>
+      <div className="flex flex-col gap-2 pl-3 md:pl-4 lg:pl-6">
+        <h2 className="text-base lg:text-xl xl:text-2xl font-black text-gold-accent-muted uppercase tracking-[0.3em]">
+          Кейси з digital просування
+        </h2>
+        <div className="w-20 h-px bg-gold-accent-muted/40 rounded-full" />
+      </div>
 
       <div className="flex flex-col md:flex-row pl-3 pr-3 md:pl-4 md:pr-4 lg:pl-6 lg:pr-6">
         <ul className="flex flex-col md:flex-row gap-3 md:gap-4 lg:gap-5 xl:gap-6 w-full">
@@ -29,18 +32,14 @@ const Cases = () => {
 
                 <div className="absolute inset-0 bg-linear-to-t from-primary-section/80 via-transparent to-transparent" />
 
-                <span className="absolute bottom-3 left-3 text-[10px] font-bold uppercase tracking-widest text-foreground/80 bg-primary-deep/70 px-2.5 py-1 rounded-full border border-white/10">
+                <span className="absolute bottom-3 left-3 text-[10px] font-bold uppercase tracking-widest bg-primary-deep/70 px-2.5 py-1 rounded-full border border-white/10">
                   {tags}
                 </span>
               </div>
 
               <div className="flex flex-col gap-3 p-4 lg:p-5">
-                <p className="text-foreground font-semibold text-sm md:text-base leading-snug">
-                  {label_ua}
-                </p>
-                <p className="text-foreground-muted text-xs md:text-sm leading-relaxed line-clamp-2">
-                  {desc}
-                </p>
+                <p className="font-semibold text-sm md:text-base leading-snug">{label_ua}</p>
+                <p className="text-xs md:text-sm leading-relaxed line-clamp-2">{desc}</p>
                 <DetailsLink src="/portfolio" text="Деталі" />
               </div>
             </li>

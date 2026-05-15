@@ -10,14 +10,14 @@ import {
 import { SiGoogleads } from 'react-icons/si';
 import {
   TbTargetArrow,
-  TbChartBarPopular,
   TbShieldCheck,
   TbHeartHandshake,
-  TbSearch,
   TbChessKnight,
-  TbRocket,
   TbChartInfographic,
-  TbArrowsMaximize,
+  TbStairsUp,
+  TbReportAnalytics,
+  TbSettingsCode,
+  TbZoomScan,
 } from 'react-icons/tb';
 
 import type { LandingFormListItemType } from '@/types/form-schema';
@@ -43,22 +43,22 @@ export const skills = [
 export const infoList = [
   {
     text: `Реклама,\nяка приносить результат`,
-    text_en: '',
+    text_en: 'Result-oriented advertising',
     icon: TbTargetArrow,
   },
   {
-    text: `Прозора аналітика\n\nта звітність`,
-    text_en: '',
-    icon: TbChartBarPopular,
+    text: `Прозора аналітика\nта звітність`,
+    text_en: 'Transparent analytics and reporting',
+    icon: TbChartInfographic,
   },
   {
     text: `Ефективні рішення.\nБез зливу бюджету`,
-    text_en: '',
+    text_en: 'Efficient solutions. No budget waste',
     icon: TbShieldCheck,
   },
   {
     text: `Індивідуальний підхід\nдо потреб бізнесу`,
-    text_en: '',
+    text_en: 'Custom approach to business needs',
     icon: TbHeartHandshake,
   },
 ];
@@ -212,28 +212,28 @@ export const casesList: CaseListItemType[] = [
 export const workSteps = [
   {
     text: `Аналіз проєкту, клієнтів та конкурентів`,
-    text_en: '',
-    icon: TbSearch,
+    text_en: 'Project, client and competitor analysis',
+    icon: TbZoomScan,
   },
   {
     text: `Індивідуальна стратегія просування`,
-    text_en: '',
+    text_en: 'Individual promotion strategy',
     icon: TbChessKnight,
   },
   {
     text: `Налаштування, запуск та оптимізація реклами`,
-    text_en: '',
-    icon: TbRocket,
+    text_en: 'Setting, launching and optimizing ads',
+    icon: TbSettingsCode,
   },
   {
     text: `Регулярна прозора звітність`,
-    text_en: '',
-    icon: TbChartInfographic,
+    text_en: 'Regular transparent reporting',
+    icon: TbReportAnalytics,
   },
   {
     text: `Супровід та масштабування`,
-    text_en: '',
-    icon: TbArrowsMaximize,
+    text_en: 'Support and scaling',
+    icon: TbStairsUp,
   },
 ];
 

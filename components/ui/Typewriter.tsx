@@ -60,7 +60,7 @@ const Typewriter = () => {
 
   return (
     <>
-      <span className="text-gold-accent">{text}</span>
+      <span className="text-gold-accent-muted">{text}</span>
       <span className="ml-1 animate-cursor text-gold-middle-accent">|</span>
     </>
   );

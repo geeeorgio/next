@@ -4,16 +4,16 @@ const Connect = () => {
   return (
     <div
       id="connect-section"
-      className="bg-primary-deep rounded-xl flex flex-col md:flex-row gap-2.5 sm:gap-3.5 md:gap-5 border border-white/10"
+      className="bg-primary-deep rounded-xl flex flex-col md:flex-row items-stretch gap-2.5 sm:gap-3.5 md:gap-5 lg:gap-6 xl:gap-7 border border-white/10 my-4"
     >
-      <div className="flex flex-col justify-between w-full gap-7 md:w-1/2 p-4 md:p-6 lg:p-7 xl:p-8">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-bold text-foreground/95">
+      <div className="flex flex-col justify-between w-full gap-7 md:w-1/2 p-4 md:p-6 lg:p-8 xl:p-9">
+        <h2 className="text-foreground/90 text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-bold">
           {`Залиште заявку, щоб обговорити `}
-          <span className="relative inline-block text-gold-accent after:absolute after:bottom-0 md:after:-bottom-0.5  lg:after:-bottom-1 xl:after:-bottom-1.5 after:left-0 after:w-full after:h-0.5 md:after:h-0.75 lg:after:h-1 after:bg-gold-accent">
+          <span className="relative inline-block text-gold-middle-accent after:absolute after:bottom-0 md:after:-bottom-0.5 lg:after:-bottom-1 xl:after:-bottom-1.5 after:left-0 after:w-full after:h-0.5 md:after:h-0.75 lg:after:h-1 after:bg-gold-middle-accent">
             проєкт
           </span>
         </h2>
-        <p className="text-sm lg:text-base text-foreground/90 font-semibold">
+        <p className="text-foreground-muted text-sm lg:text-base font-semibold">
           Дізнайтесь, як підвищити ефективність ваших рекламних кампаній і отримати більше
           результатів за той самий бюджет. Заповніть форму, і вже за 48 годин ви отримаєте детальний
           аудит із рекомендаціями для покращення.
