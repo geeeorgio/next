@@ -12,25 +12,36 @@ const CustomButton = ({ children, className, handlePress }: CustomButtonProps) =
       onClick={handlePress}
       type="button"
       className={`
-        group relative overflow-hidden cursor-pointer
-        py-2 sm:py-3
-        px-3 md:px-4
-        rounded-xl
-        flex items-center justify-center gap-2
-        bg-linear-to-b
-        from-primary-section
-        via-primary-dark
-        to-primary-deep
+        group relative inline-flex items-center justify-center gap-2
+        overflow-hidden rounded-xl
+        px-6 py-3
+        bg-primary-deep/40
+        border border-gold-middle-accent/30
         text-gold-accent
-        border border-gold-middle-accent/50
-        hover:border-gold-accent/60
-        transition-[border-color,transform] duration-500 ease-out
+        font-semibold
+        text-sm md:text-base
+        tracking-wide
+        cursor-pointer
+        transition-[transform,border-color,background-color]
+        duration-300
+        hover:border-gold-accent
+        hover:bg-primary-dark/80
         active:scale-95
-        font-bold text-xs md:text-sm
         ${className ?? ''}
       `}
     >
-      <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-[opacity,transform] duration-500 bg-linear-to-r from-transparent via-gold-accent/10 to-transparent -translate-x-full group-hover:translate-x-full" />
+      <span
+        className="
+          absolute inset-0
+          bg-linear-to-b from-gold-accent/10 to-transparent
+          opacity-0
+          group-hover:opacity-100
+          transition-opacity duration-300
+          pointer-events-none
+        "
+      />
+
+      <span className="absolute inset-x-0 bottom-0 h-px bg-gold-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
       <span className="relative z-10 flex items-center gap-2">{children}</span>
     </button>

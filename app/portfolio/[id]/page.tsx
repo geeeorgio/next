@@ -1,4 +1,4 @@
-import { casesList } from '@/lib/landing-form-list';
+import { casesList } from '@/lib/cases-list';
 
 interface PortfolioCardDetailsProps {
   params: Promise<{ id: string }>;

@@ -8,7 +8,7 @@ interface ServicesListItemProps {
 
 const ServicesListItem = ({ item: { label_ua, icon: Icon, desc } }: ServicesListItemProps) => {
   return (
-    <li className="group relative overflow-hidden flex flex-col flex-1 rounded-2xl bg-card-light border border-foreground-muted/10 shadow-lg gap-4 md:gap-5 lg:gap-6 xl:gap-7 p-5 lg:p-7 transition-[border-color,background-color,color] duration-700 ease-learn-more hover:border-gold-middle-accent/30">
+    <li className="group relative overflow-hidden flex flex-col flex-1 rounded-2xl bg-card-light shadow-md gap-4 md:gap-5 lg:gap-6 xl:gap-7 p-5 lg:p-7 transition-[border-color,background-color,color] duration-700 ease-learn-more">
       <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 bg-linear-to-b from-card-dark via-primary-dark to-primary-section transition-opacity duration-700 ease-learn-more pointer-events-none" />
 
       <div className="relative z-10 flex flex-col flex-1 gap-4 md:gap-6">

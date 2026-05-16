@@ -8,8 +8,6 @@ const Banner = () => {
     <div className="relative overflow-hidden flex flex-col bg-primary-dark gap-2 md:gap-3 lg:gap-4 xl:gap-5">
       <div className="flex flex-col-reverse sm:flex-row gap-8 items-center max-w-8xl mx-auto w-full">
         <div className="relative w-full sm:w-[30%] h-80 lg:h-130 xl:h-140 shrink-0">
-          <div className="absolute left-[-10%] top-10 w-72 h-72 bg-gold-accent/10 rounded-full pointer-events-none" />
-
           <Image
             src="/liydmila_kyryliuk_banner.png"
             alt="Людмила Кирилюк контактний баннер"

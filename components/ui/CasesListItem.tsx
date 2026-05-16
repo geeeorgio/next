@@ -9,7 +9,7 @@ interface CasesListItemProps {
 
 const CasesListItem = ({ item: { id, label_ua, img, tags, desc, task } }: CasesListItemProps) => {
   return (
-    <li className="group flex flex-1 relative overflow-hidden rounded-xl border border-black/5 bg-card-light cursor-pointer transition-colors duration-500 hover:border-gold-accent-muted/30">
+    <li className="group flex flex-1 relative overflow-hidden rounded-xl bg-card-light cursor-pointer shadow-md">
       <Link
         href={`/portfolio/${id}`}
         className="absolute inset-0 z-20"

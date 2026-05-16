@@ -7,12 +7,39 @@ interface OrderLinkProps {
 const OrderLink = ({ extraStyle }: OrderLinkProps) => {
   return (
     <Link
-      href={'/order'}
-      className={`relative flex items-center justify-center ${extraStyle ?? ''} overflow-hidden cursor-pointer py-2 sm:py-3 lg:py-4 px-2 md:px-3 lg:px-5 rounded-xl bg-linear-to-br from-gold-accent via-gold-middle-accent to-gold-accent-sand hover:brightness-105 transition-transform active:scale-95`}
+      href="/order"
+      className={`
+        group relative inline-flex items-center justify-center
+        overflow-hidden rounded-xl
+        px-6 py-3
+        bg-gold-accent-muted
+        text-primary-deep
+        font-bold
+        text-sm md:text-base
+        tracking-wider
+        uppercase
+        cursor-pointer
+        transition-[transform,background-color]
+        duration-300
+        hover:bg-gold-middle-accent
+        active:scale-95
+        ${extraStyle ?? ''}
+      `}
     >
-      <span className="text-center text-primary-deep font-semibold text-sm md:text-base">
-        Обговорити проєкт
-      </span>
+      <span className="absolute inset-x-0 top-0 h-px bg-white/20 pointer-events-none" />
+
+      <span className="relative z-10">Обговорити проєкт</span>
+
+      <span
+        className="
+          absolute inset-0
+          w-[150%] h-full
+          bg-linear-to-r from-transparent via-white/25 to-transparent
+          -translate-x-full
+          group-hover:animate-shimmer
+          pointer-events-none
+        "
+      />
     </Link>
   );
 };

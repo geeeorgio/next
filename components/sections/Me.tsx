@@ -45,7 +45,8 @@ const Me = () => {
               src="/liydmyla_kyryliuk_contact.png"
               alt="Людмила Кирилюк"
               fill
-              className="object-cover object-top transition-transform duration-700 hover:scale-105"
+              sizes="(max-width: 768px) 280px, (max-width: 1280px) 360px, 400px"
+              className="object-cover object-top transition-transform duration-300 hover:scale-105"
             />
           </div>
         </div>
