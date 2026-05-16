@@ -34,31 +34,32 @@ export const navItemsList = [
 ] as const;
 
 export const skills = [
-  'таргетована реклама в Meta Ads',
-  'пошукова реклама в Google Ads',
-  'просування на Google Картах',
-  'комплексні маркетингові стратегії',
+  'Клієнти з Facebook та Google',
+  'Зниження вартості ліда',
+  'Стабільний потік заявок',
+  'Просування локального бізнесу',
+  'Реклама, що приносить продажі',
 ];
 
 export const infoList = [
   {
-    text: `Реклама,\nяка приносить результат`,
-    text_en: 'Result-oriented advertising',
+    text: `Реклама,\nщо приводить клієнтів`,
+    text_en: 'Result-oriented\nadvertising',
     icon: TbTargetArrow,
   },
   {
-    text: `Прозора аналітика\nта звітність`,
-    text_en: 'Transparent analytics and reporting',
+    text: `Прозора аналітика\nбез прихованих цифр`,
+    text_en: 'Transparent analytics\nand reporting',
     icon: TbChartInfographic,
   },
   {
-    text: `Ефективні рішення.\nБез зливу бюджету`,
-    text_en: 'Efficient solutions. No budget waste',
+    text: `Ефективні рішення\nбез зливу бюджету`,
+    text_en: 'Efficient solutions\nNo budget waste',
     icon: TbShieldCheck,
   },
   {
-    text: `Індивідуальний підхід\nдо потреб бізнесу`,
-    text_en: 'Custom approach to business needs',
+    text: `Стратегія під ваш\nбізнес та нішу`,
+    text_en: 'Custom approach\nto business needs',
     icon: TbHeartHandshake,
   },
 ];

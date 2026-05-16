@@ -5,7 +5,7 @@ import DetailsLink from '../ui/DetailsLink';
 const Me = () => {
   return (
     <div className="flex flex-col relative overflow-hidden gap-8 sm:gap-10 lg:gap-12">
-      <div className="flex flex-col gap-2 pl-3 md:pl-4 lg:pl-6">
+      <div className="flex flex-col gap-2 mb-4 md:mb-8">
         <h2 className="text-base lg:text-xl xl:text-2xl font-black text-gold-accent-muted uppercase tracking-[0.3em]">
           Про мене
         </h2>
@@ -13,9 +13,9 @@ const Me = () => {
       </div>
 
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-4">
-        <div className="flex flex-col pl-3 pr-3 md:pl-4 md:pr-4 lg:pl-6 lg:pr-6 flex-1 gap-6 lg:gap-8">
+        <div className="flex flex-col flex-1 gap-6 lg:gap-8">
           <div className="flex flex-col gap-3">
-            <h3 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight uppercase leading-tight [text-shadow:0_2px_30px_rgba(244,216,143,0.15)]">
+            <h3 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-wide uppercase leading-tight [text-shadow:0_2px_30px_rgba(244,216,143,0.15)]">
               Людмила Кирилюк
             </h3>
 
@@ -40,7 +40,7 @@ const Me = () => {
         </div>
 
         <div className="relative shrink-0 md:pr-4 lg:pr-5">
-          <div className="relative h-64 w-64 lg:h-80 lg:w-80 xl:h-90 xl:w-90 overflow-hidden rounded-full border-2 border-white/10 shadow-[0_0_40px_rgba(244,216,143,0.2)] bg-primary-dark/90">
+          <div className="relative h-70 w-70 lg:h-90 lg:w-90 xl:h-100 xl:w-100 overflow-hidden rounded-full border-2 border-white/10 shadow-[0_0_40px_rgba(244,216,143,0.2)] bg-primary-dark/90">
             <Image
               src="/liydmyla_kyryliuk_contact.png"
               alt="Людмила Кирилюк"

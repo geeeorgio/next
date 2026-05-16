@@ -4,15 +4,15 @@ import ServicesLink from '../ui/ServicesLink';
 
 const Steps = () => {
   return (
-    <div className="flex flex-col relative overflow-hidden gap-8 md:gap-12 lg:gap-16">
-      <div className="flex flex-col gap-2 pl-3 md:pl-4 lg:pl-6">
+    <div className="flex flex-col relative overflow-hidden gap-8 sm:gap-10 lg:gap-12">
+      <div className="flex flex-col gap-2 mb-4 md:mb-8">
         <h2 className="text-base lg:text-xl xl:text-2xl font-black text-gold-accent-muted uppercase tracking-[0.3em]">
           Етапи роботи
         </h2>
         <div className="w-20 h-px bg-gold-accent-muted/40 rounded-full" />
       </div>
 
-      <div className="relative pl-3 pr-3 md:pl-4 md:pr-4 lg:pl-6 lg:pr-6 w-full">
+      <div className="relative w-full">
         <div className="hidden md:block absolute top-7 left-10 right-10 h-px border-t border-dashed border-primary-deep/20 z-0" />
 
         <ul className="flex flex-col md:flex-row gap-8 md:gap-4 lg:gap-6 w-full items-start">
@@ -44,7 +44,7 @@ const Steps = () => {
         </ul>
       </div>
 
-      <div className="flex justify-center mt-4">
+      <div className="flex justify-center">
         <ServicesLink src="/work" text="Детальніше про кожен етап" />
       </div>
     </div>

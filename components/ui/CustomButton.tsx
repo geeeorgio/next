@@ -11,9 +11,29 @@ const CustomButton = ({ children, className, handlePress }: CustomButtonProps) =
     <button
       onClick={handlePress}
       type="button"
-      className={`relative overflow-hidden cursor-pointer py-2 sm:py-3 lg:py-4 px-2 md:px-3 lg:px:5 rounded-xl flex items-center justify-center gap-2 bg-primary-deep/90 text-gold-accent border border-gold-middle-accent/50 shadow-[0_4px_12px_rgba(2,15,10,0.08)] hover:bg-primary-dark hover:border-gold-middle-accent/70 hover:shadow-[0_6px_20px_rgba(2,15,10,0.12)] transition-all duration-300 ease-out active:scale-95 font-bold text-xs md:text-sm ${className ?? ''}`}
+      className={`
+        group relative overflow-hidden cursor-pointer
+        py-2 sm:py-3
+        px-3 md:px-4
+        rounded-xl
+        flex items-center justify-center gap-2
+        bg-linear-to-b
+        from-primary-section
+        via-primary-dark
+        to-primary-deep
+        text-gold-accent
+        border border-gold-middle-accent/50
+        shadow-[0_10px_30px_-12px_rgba(2,15,10,0.7),inset_0_1px_0_rgba(255,255,255,0.06)]
+        hover:border-gold-accent/60
+        transition-all duration-500 ease-out
+        active:scale-95
+        font-bold text-xs md:text-sm
+        ${className ?? ''}
+      `}
     >
-      {children}
+      <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-linear-to-r from-transparent via-gold-accent/10 to-transparent -translate-x-full group-hover:translate-x-full" />
+
+      <span className="relative z-10 flex items-center gap-2">{children}</span>
     </button>
   );
 };

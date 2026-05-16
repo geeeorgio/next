@@ -19,7 +19,7 @@ const DetailsLink = ({ src, text }: DetailsLinkProps) => {
       <div className="relative z-10 flex items-center justify-center transition-transform duration-500 ease-learn-more group-hover:translate-x-1.5">
         <FaArrowRight
           size={20}
-          className="text-gold-accent group-hover:text-primary-deep transition-colors duration-300"
+          className="text-gold-middle-accent group-hover:text-primary-deep transition-colors duration-300"
         />
       </div>
 
