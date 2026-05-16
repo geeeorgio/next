@@ -12,7 +12,7 @@ export type ServicesListItemType = {
   icon: IconType;
 };
 
-export const CASES_TAGS_LIST = ['Кулінарія', '', '', ''] as const;
+export const CASES_TAGS_LIST = ['Кулінарія'] as const;
 
 export interface CaseListItemType {
   id: string;

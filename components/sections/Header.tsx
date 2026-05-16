@@ -1,5 +1,3 @@
-'use client';
-
 import { LiaTelegramPlane } from 'react-icons/lia';
 
 import CustomButton from '../ui/CustomButton';

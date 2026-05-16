@@ -45,7 +45,6 @@ const Me = () => {
               src="/liydmyla_kyryliuk_contact.png"
               alt="Людмила Кирилюк"
               fill
-              priority
               className="object-cover object-top transition-transform duration-700 hover:scale-105"
             />
           </div>

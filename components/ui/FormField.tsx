@@ -15,7 +15,7 @@ interface FormFieldProps {
 
 const FormField = ({ item, register, control, errors }: FormFieldProps) => {
   const error = errors[item._name];
-  const inputStyle = `outline-none text-sm border rounded-xl px-4 py-4 bg-transparent text-foreground transition-all duration-300 ${error ? 'border-red-500/80 focus:border-red-500' : 'border-foreground-muted/30 focus:border-gold-accent-muted focus:ring-1 focus:ring-gold-accent/20'}`;
+  const inputStyle = `outline-none text-sm border rounded-xl px-4 py-4 bg-transparent text-foreground transition-[border-color,box-shadow] duration-300 ${error ? 'border-red-500/80 focus:border-red-500' : 'border-foreground-muted/30 focus:border-gold-accent-muted focus:ring-1 focus:ring-gold-accent/20'}`;
 
   return (
     <div className="flex flex-col relative group">

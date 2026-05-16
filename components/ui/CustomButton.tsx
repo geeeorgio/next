@@ -24,13 +24,13 @@ const CustomButton = ({ children, className, handlePress }: CustomButtonProps) =
         text-gold-accent
         border border-gold-middle-accent/50
         hover:border-gold-accent/60
-        transition-all duration-500 ease-out
+        transition-[border-color,transform] duration-500 ease-out
         active:scale-95
         font-bold text-xs md:text-sm
         ${className ?? ''}
       `}
     >
-      <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-linear-to-r from-transparent via-gold-accent/10 to-transparent -translate-x-full group-hover:translate-x-full" />
+      <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-[opacity,transform] duration-500 bg-linear-to-r from-transparent via-gold-accent/10 to-transparent -translate-x-full group-hover:translate-x-full" />
 
       <span className="relative z-10 flex items-center gap-2">{children}</span>
     </button>

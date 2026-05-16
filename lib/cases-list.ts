@@ -119,3 +119,5 @@ export const casesList: CaseListItemType[] = [
     created: '18.02.2026',
   },
 ];
+
+export const featuredCases = casesList.slice(2, 5);
