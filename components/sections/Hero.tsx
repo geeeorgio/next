@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { LiaTelegramPlane } from 'react-icons/lia';
 
-import { infoList } from '@/lib/nav-items';
+import { infoList } from '@/lib/info-list';
 
 import CustomButton from '../ui/CustomButton';
 import OrderLink from '../ui/OrderLink';
@@ -57,13 +57,13 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 w-full bg-primary-dark/40 backdrop-blur-xs border border-white/5 rounded-xl p-2 sm:p-3 md:p-4 lg:p-8 shadow-[0_20px_50px_rgba(0,0,0,0.3)]">
+        <div className="flex flex-col sm:flex-row gap-4 w-full bg-primary-dark/40 border border-white/5 rounded-xl p-2 sm:p-3 md:p-4 lg:p-8">
           {infoList.map(({ text, icon: Icon }) => (
             <div
               key={text}
               className="flex flex-row sm:flex-col md:flex-row sm:items-center gap-4 flex-1 min-w-0 group"
             >
-              <div className="flex shrink-0 py-2 px-2 lg:px-4 lg:py-4 border border-gold-middle-accent/20 rounded-xl items-center justify-center bg-primary-deep shadow-inner">
+              <div className="flex shrink-0 py-2 px-2 lg:px-4 lg:py-4 border border-gold-middle-accent/20 rounded-xl items-center justify-center bg-primary-deep">
                 <Icon size={22} strokeWidth={1.5} className="text-gold-middle-accent" />
               </div>
               <span className="text-start sm:text-center md:text-start text-foreground/80 text-xs lg:text-sm font-medium leading-tight whitespace-pre-line">

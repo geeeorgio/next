@@ -7,7 +7,7 @@ const LogoLink = () => {
       href="/"
       className="group relative block w-24 h-10 md:w-30 md:h-12 xl:w-36 lg:h-14 transition-all duration-500 ease-in-out "
     >
-      <div className="absolute inset-0 rounded-full bg-gold-accent/5 blur-xl opacity-20 transition-opacity duration-700 group-hover:opacity-100 group-hover:bg-gold-accent/10" />
+      <div className="absolute inset-0 rounded-full bg-gold-accent/5 opacity-20 transition-opacity duration-700 group-hover:opacity-100 group-hover:bg-gold-accent/10" />
 
       <Image
         src="/logo.png"

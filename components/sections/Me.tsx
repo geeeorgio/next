@@ -15,7 +15,7 @@ const Me = () => {
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-4">
         <div className="flex flex-col flex-1 gap-6 lg:gap-8">
           <div className="flex flex-col gap-3">
-            <h3 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-wide uppercase leading-tight [text-shadow:0_2px_30px_rgba(244,216,143,0.15)]">
+            <h3 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-wide uppercase leading-tight">
               Людмила Кирилюк
             </h3>
 
@@ -40,7 +40,7 @@ const Me = () => {
         </div>
 
         <div className="relative shrink-0 md:pr-4 lg:pr-5">
-          <div className="relative h-70 w-70 lg:h-90 lg:w-90 xl:h-100 xl:w-100 overflow-hidden rounded-full border-2 border-white/10 shadow-[0_0_40px_rgba(244,216,143,0.2)] bg-primary-dark/90">
+          <div className="relative h-70 w-70 lg:h-90 lg:w-90 xl:h-100 xl:w-100 overflow-hidden rounded-full border-2 border-white/10 bg-primary-dark/90">
             <Image
               src="/liydmyla_kyryliuk_contact.png"
               alt="Людмила Кирилюк"

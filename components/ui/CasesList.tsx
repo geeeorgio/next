@@ -1,4 +1,4 @@
-import { casesList } from '@/lib/nav-items';
+import { casesList } from '@/lib/cases-list';
 
 import CasesListItem from './CasesListItem';
 

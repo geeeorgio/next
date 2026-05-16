@@ -23,7 +23,6 @@ const CustomButton = ({ children, className, handlePress }: CustomButtonProps) =
         to-primary-deep
         text-gold-accent
         border border-gold-middle-accent/50
-        shadow-[0_10px_30px_-12px_rgba(2,15,10,0.7),inset_0_1px_0_rgba(255,255,255,0.06)]
         hover:border-gold-accent/60
         transition-all duration-500 ease-out
         active:scale-95

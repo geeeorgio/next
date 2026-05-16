@@ -1,4 +1,4 @@
-import { workSteps } from '@/lib/nav-items';
+import { workSteps } from '@/lib/work-steps';
 
 import ServicesLink from '../ui/ServicesLink';
 

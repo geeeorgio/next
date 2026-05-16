@@ -1,4 +1,4 @@
-import { servicesList } from '@/lib/nav-items';
+import { servicesList } from '@/lib/servises-list';
 
 import ServicesListItem from './ServicesListItem';
 

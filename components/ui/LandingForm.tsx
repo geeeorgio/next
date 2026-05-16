@@ -4,7 +4,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import type { SubmitHandler } from 'react-hook-form';
 import { useForm } from 'react-hook-form';
 
-import { landingFormList } from '@/lib/nav-items';
+import { landingFormList } from '@/lib/landing-form-list';
 import { landingFormSchema, type LandingFormSchemaType } from '@/types/form-schema';
 
 import FormField from './FormField';

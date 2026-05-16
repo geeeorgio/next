@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 
 import { DELETE_SPEED, TYPING_PAUSE, TYPING_SPEED } from '@/lib/constants';
-import { skills } from '@/lib/nav-items';
+import { skills } from '@/lib/skills-list';
 
 const Typewriter = () => {
   const charIdxRef = useRef(0);

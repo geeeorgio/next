@@ -9,7 +9,7 @@ interface CasesListItemProps {
 
 const CasesListItem = ({ item: { id, label_ua, img, tags, desc, task } }: CasesListItemProps) => {
   return (
-    <li className="group flex flex-1 relative overflow-hidden rounded-xl border border-black/5 bg-card-light cursor-pointer shadow-sm transition-all duration-500 hover:shadow-[0_25px_60px_-15px_rgba(7,28,20,0.12)] hover:border-gold-accent-muted/30">
+    <li className="group flex flex-1 relative overflow-hidden rounded-xl border border-black/5 bg-card-light cursor-pointer transition-all duration-500 hover:border-gold-accent-muted/30">
       <Link
         href={`/portfolio/${id}`}
         className="absolute inset-0 z-20"
@@ -41,7 +41,7 @@ const CasesListItem = ({ item: { id, label_ua, img, tags, desc, task } }: CasesL
           <p className="text-primary-dark/75 text-xs md:text-sm leading-relaxed line-clamp-3">
             {desc}
           </p>
-          <div className="pt-3 border-t border-primary-dark/5 flex justify-end">
+          <div className="pt-3 border-t border-primary-dark/5 flex">
             <p className="text-primary-dark/75">{task}</p>
           </div>
         </div>
