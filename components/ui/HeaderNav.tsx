@@ -22,7 +22,7 @@ const HeaderNav = () => {
                       ${
                         isActive
                           ? 'text-gold-middle-accent'
-                          : 'text-foreground hover:text-gold-middle-accent'
+                          : 'text-foreground hover:text-gold-middle-accent transition-colors duration-300'
                       }`}
               >
                 {label_ua}

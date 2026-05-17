@@ -1,24 +1,19 @@
-import { TbChartInfographic, TbHeartHandshake, TbShieldCheck, TbTargetArrow } from 'react-icons/tb';
+import { HeartHandshake, LocateFixed, ShieldCheck } from 'lucide-react';
 
 export const infoList = [
   {
     text: `Реклама,\nщо приводить клієнтів`,
     text_en: 'Result-oriented\nadvertising',
-    icon: TbTargetArrow,
+    icon: LocateFixed,
   },
   {
-    text: `Прозора аналітика\nбез прихованих цифр`,
-    text_en: 'Transparent analytics\nand reporting',
-    icon: TbChartInfographic,
-  },
-  {
-    text: `Ефективні рішення\nбез зливу бюджету`,
+    text: `Зменшую вартість\nзаявки`,
     text_en: 'Efficient solutions\nNo budget waste',
-    icon: TbShieldCheck,
+    icon: ShieldCheck,
   },
   {
     text: `Стратегія під ваш\nбізнес та нішу`,
     text_en: 'Custom approach\nto business needs',
-    icon: TbHeartHandshake,
+    icon: HeartHandshake,
   },
 ];

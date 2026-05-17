@@ -50,14 +50,19 @@ const LandingForm = () => {
           type="submit"
           disabled={isSubmitting}
           className="
-            relative cursor-pointer disabled:cursor-not-allowed flex w-full self-center items-center justify-center overflow-hidden rounded-xl border border-gold-accent-muted/80
-            bg-primary-deep px-5 py-4 text-xs lg:text-sm font-bold uppercase tracking-widest text-gold-accent
-            transition-all duration-400 hover:border-gold-accent hover:shadow-[0_0_20px_rgba(244,216,143,0.15)]
-            active:scale-95 disabled:opacity-50 group
+            relative flex w-full items-center justify-center
+            rounded-xl
+            border border-gold-accent-muted/60
+            bg-primary-deep
+            px-5 py-4
+            text-xs lg:text-sm
+            font-bold uppercase tracking-widest text-gold-accent
+            transition-[border-color, filter, transform] duration-300
+            hover:border-gold-accent hover:brightness-105
+            active:scale-95
+            disabled:opacity-50 disabled:cursor-not-allowed
           "
         >
-          <span className="absolute inset-0 -translate-x-full bg-linear-to-r from-transparent via-gold-accent/15 to-transparent transition-transform duration-1111 group-hover:translate-x-full" />
-
           <span className="relative">{isSubmitting ? 'Відправка...' : 'Обговорити проєкт'}</span>
         </button>
       </form>

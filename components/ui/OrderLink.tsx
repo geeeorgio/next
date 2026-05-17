@@ -9,37 +9,23 @@ const OrderLink = ({ extraStyle }: OrderLinkProps) => {
     <Link
       href="/order"
       className={`
-        group relative inline-flex items-center justify-center
-        overflow-hidden rounded-xl
+        group inline-flex items-center justify-center
+        rounded-xl
         px-6 py-3
-        bg-gold-accent-muted
+        bg-linear-to-br
+        from-gold-middle-accent via-gold-accent to-gold-accent-sand
         text-primary-deep
-        font-bold
         text-sm md:text-base
-        tracking-wider
-        uppercase
-        cursor-pointer
-        transition-[transform,background-color]
+        font-semibold
+        tracking-wide
+        transition-[transform, filter]
         duration-300
-        hover:bg-gold-middle-accent
+        hover:brightness-110
         active:scale-95
         ${extraStyle ?? ''}
       `}
     >
-      <span className="absolute inset-x-0 top-0 h-px bg-white/20 pointer-events-none" />
-
       <span className="relative z-10">Обговорити проєкт</span>
-
-      <span
-        className="
-          absolute inset-0
-          w-[150%] h-full
-          bg-linear-to-r from-transparent via-white/25 to-transparent
-          -translate-x-full
-          group-hover:animate-shimmer
-          pointer-events-none
-        "
-      />
     </Link>
   );
 };

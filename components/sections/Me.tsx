@@ -1,53 +1,57 @@
 import Image from 'next/image';
 
+import AboutMeList from '../ui/AboutMeList';
+import AboutMeStatsList from '../ui/AboutMeStatsList';
+import AboutTagsList from '../ui/AboutTagsList';
 import DetailsLink from '../ui/DetailsLink';
 
 const Me = () => {
   return (
-    <div className="flex flex-col relative overflow-hidden gap-8 sm:gap-10 lg:gap-12">
-      <div className="flex flex-col gap-2 mb-4 md:mb-8">
-        <h2 className="text-base lg:text-xl xl:text-2xl font-black text-gold-accent-muted uppercase tracking-[0.3em]">
+    <div className="flex flex-col relative overflow-hidden gap-8 md:gap-10">
+      <div className="flex flex-col gap-2">
+        <h2 className="text-base lg:text-xl xl:text-2xl font-black text-gold-accent-sand uppercase tracking-[0.3em]">
           Про мене
         </h2>
-        <div className="w-20 h-px bg-gold-accent-muted/40 rounded-full" />
+        <div className="w-20 h-px bg-gold-accent-sand/50 rounded-full" />
       </div>
 
-      <div className="flex flex-col md:flex-row items-center gap-8 md:gap-4">
-        <div className="flex flex-col flex-1 gap-6 lg:gap-8">
-          <div className="flex flex-col gap-3">
-            <h3 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-wide uppercase leading-tight">
+      <div className="flex flex-col md:flex-row md:items-stretch gap-12 lg:gap-14">
+        <div className="flex flex-col w-full sm:w-1/2 md:w-[55%] justify-between gap-6 lg:gap-8">
+          <div className="flex flex-col gap-4">
+            <h3 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl tracking-wide font-display font-black uppercase leading-tight">
               Людмила Кирилюк
             </h3>
 
             <div className="flex p-2 bg-primary-deep/90 w-fit">
-              <h4 className="text-gold-middle-accent uppercase tracking-[0.25em] text-[10px] md:text-xs lg:text-sm font-bold">
+              <h4 className="text-gold-middle-accent uppercase tracking-[0.25em] text-[10px] md:text-xs lg:text-sm font-bold px-1">
                 Таргетолог • Meta & Google Ads
               </h4>
             </div>
           </div>
 
-          <div className="flex flex-col gap-5 pl-4 relative before:absolute before:left-0 before:top-0 before:h-full before:w-0.5 before:bg-linear-to-b before:from-gold-accent-sand/50 before:via-gold-accent-muted/40 before:to-gold-accent/30">
-            <p className="text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl">
-              Понад 2 роки працюю з рекламою в Meta та Google Ads. За цей час запустила кампанії для
-              15+ клієнтів у сферах e-commerce, нерухомості та освіти — від малого бізнесу до
-              міжнародних проєктів.
-            </p>
-          </div>
+          <AboutMeList />
+
+          <AboutTagsList />
 
           <div className="flex mt-2">
             <DetailsLink src="/about" text="Більше про мій досвід" />
           </div>
         </div>
 
-        <div className="relative shrink-0 md:pr-4 lg:pr-5">
-          <div className="relative h-70 w-70 lg:h-90 lg:w-90 xl:h-100 xl:w-100 overflow-hidden rounded-full border-2 border-white/10 bg-primary-dark/90">
-            <Image
-              src="/liydmyla_kyryliuk_contact.png"
-              alt="Людмила Кирилюк"
-              fill
-              sizes="(max-width: 768px) 280px, (max-width: 1280px) 360px, 400px"
-              className="object-cover object-top transition-transform duration-300 hover:scale-105"
-            />
+        <div className="w-full sm:w-1/2 md:w-[45%] flex justify-center md:justify-start lg:justify-center relative shrink-0">
+          <div className="relative w-70 h-90 lg:w-85 xl:w-90 md:h-full aspect-3/4">
+            <div className="relative w-full h-full overflow-hidden rounded-[180px] bg-linear-to-br from-primary/10 to-primary-deep/20 z-10">
+              <Image
+                src="/liydmyla_kyryliuk_contact.png"
+                alt="Людмила Кирилюк"
+                fill
+                priority
+                sizes="(max-width: 768px) 280px, (max-width: 1280px) 340px, 360px"
+                className="object-cover object-top"
+              />
+            </div>
+
+            <AboutMeStatsList />
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ const FooterNav = () => {
         {navItemsList.map(({ href, label_ua }) => (
           <li
             key={label_ua}
-            className="text-sm lg:text-base font-medium transition-colors duration-300 text-foreground/70 hover:text-foreground"
+            className="text-sm lg:text-base font-medium transition-colors duration-300 text-foreground-muted hover:text-foreground"
           >
             <Link href={href} className={`pt-2 pb-2`}>
               {label_ua}

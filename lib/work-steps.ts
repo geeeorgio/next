@@ -1,35 +1,35 @@
 import {
-  TbChessKnight,
-  TbReportAnalytics,
-  TbSettingsCode,
-  TbStairsUp,
-  TbZoomScan,
-} from 'react-icons/tb';
+  ChartNoAxesCombined,
+  ChessKnight,
+  FileChartColumnIncreasing,
+  ScanSearch,
+  Settings2,
+} from 'lucide-react';
 
 export const workSteps = [
   {
     text: `Аналіз проєкту, клієнтів та конкурентів`,
     text_en: 'Project, client and competitor analysis',
-    icon: TbZoomScan,
+    icon: ScanSearch,
   },
   {
     text: `Індивідуальна стратегія просування`,
     text_en: 'Individual promotion strategy',
-    icon: TbChessKnight,
+    icon: ChessKnight,
   },
   {
     text: `Налаштування, запуск та оптимізація реклами`,
     text_en: 'Setting, launching and optimizing ads',
-    icon: TbSettingsCode,
+    icon: Settings2,
   },
   {
     text: `Регулярна прозора звітність`,
     text_en: 'Regular transparent reporting',
-    icon: TbReportAnalytics,
+    icon: FileChartColumnIncreasing,
   },
   {
     text: `Супровід та масштабування`,
     text_en: 'Support and scaling',
-    icon: TbStairsUp,
+    icon: ChartNoAxesCombined,
   },
 ];

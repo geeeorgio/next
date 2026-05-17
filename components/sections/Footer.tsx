@@ -6,8 +6,8 @@ import SocialLinks from '../ui/SocialLinks';
 
 const Footer = () => {
   return (
-    <footer className="bg-footer flex flex-col gap-4 sm:gap-5 md:gap-8 lg:gap-12 xl:gap-14 px-4 lg:px-6 py-4 md:py-8 lg:py-10 xl:py-14">
-      <div className="flex flex-col md:flex-row justify-between items-start gap-2 md:gap-3 lg:gap-4">
+    <footer className="bg-footer flex flex-col gap-10 lg:gap-16 px-8 lg:px-16 py-8 lg:py-16">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-8 lg:gap-12">
         <div className="flex flex-col gap-3 sm:gap-4 md:gap-5 lg:gap-6 xl:gap-7 items-start">
           <LogoLink />
           <p className="text-foreground/80 font-medium text-sm lg:text-base max-w-65">

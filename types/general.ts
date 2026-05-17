@@ -1,4 +1,8 @@
-import type { IconType } from 'react-icons';
+import type { LucideIcon } from 'lucide-react';
+import type { ComponentProps, ComponentType } from 'react';
+
+export type CustomSvgIconType = ComponentType<ComponentProps<'svg'>>;
+export type IconType = LucideIcon | CustomSvgIconType;
 
 export type SocialListItemType = {
   label: string;
@@ -8,7 +12,7 @@ export type SocialListItemType = {
 
 export type ServicesListItemType = {
   label_ua: string;
-  desc: string;
+  desc: string[];
   icon: IconType;
 };
 
